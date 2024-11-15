@@ -54,7 +54,7 @@ body {
 .welcome {
     height: 50px;
     justify-content: center;
-    align-items: center;
+    bottom: 70px;
     display: flex;
     font-size: 300%;
     font-family: sans-serif;
