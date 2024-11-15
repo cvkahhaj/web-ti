@@ -4,44 +4,77 @@ html {
     padding: 0;
 }
 
-.ul-navbar {
-    display: flex;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
+.h{
+  position: absolute;
+  background: #fff;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  padding: 10px 30px;
+  transition: 0.5s;
 }
 
-.li-navbar {
-    list-style-type: none;
-    margin: 5px;
-    padding: 20px;
-    color: white;
-    font-size: 20px;
+.h:hover{
+  background: var(--clr);
+  color: var(--clr);
+  letter-spacing: 0.25em;
+  box-shadow: 0 0 35px var(--clr);
 }
 
-.nav {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.h::before{
+  content: '';
+  position: absolute;
+  inset: 2px;
+  background: #151F28;
 }
 
-.navv {
-    background-color: darkorange;
-    height: 65px;
-    display: flex;
+.h span{
+  position: relative;
+  z-index: 1;
 }
 
-.home {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.h i{
+  position: absolute;
+  inset: 0;
+  display: block;
 }
 
-.logohome {
-    height: 30px;
+.h i::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 80%;
+  width: 10px;
+  height: 4px;
+  background: #151F28;
+  transform: translateX(-50%) skewX(325deg);
+  transition: 0.5s;
 }
 
+.h:hover i::before{
+  width: 20px;
+  left: 20%;
+}
+
+.h i::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  width: 10px;
+  height: 4px;
+  background: #151F28;
+  transform: translateX(-50%) skewX(325deg);
+  transition: 0.5s;
+}
+
+.h:hover i::after{
+  width: 20px;
+  left: 80%;
+}
 .content {
         justify-content: center;
         align-items: center;
